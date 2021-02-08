@@ -119,66 +119,6 @@
       "urlIMDb": "https://www.imdb.com/title/tt2948372/?ref_=hm_fanfav_tt_2_pd_fp1",
       "genero": "Comédia",
       "id": 12
-    },
-    {
-      "titulo": "WandaVision",
-      "urlFoto": "https://m.media-amazon.com/images/M/MV5BYjJiZmE5ZDgtYWUxZi00MWI1LTg2MmEtZmUwZGE2YzRkNTE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
-      "dtLancamento": "2021-01-15T03:00:00.000Z",
-      "descricao": "Ao viverem sua vida suburbana ideal, Wanda Maximoff e Vision começam a suspeitar que as coisas não são o que parecem.",
-      "nota": 8,
-      "urlIMDb": "https://www.imdb.com/title/tt9140560/?ref_=hm_fanfav_tt_1_pd_fp1",
-      "genero": "Comédia",
-      "id": 13
-    },
-    {
-      "titulo": "aaaaaaaaa",
-      "urlFoto": "",
-      "dtLancamento": "2021-02-08T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 14
-    },
-    {
-      "titulo": "Mad Max: Fury Road",
-      "urlFoto": "",
-      "dtLancamento": "2015-11-19T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ação",
-      "id": 15
-    },
-    {
-      "titulo": "bbbbbbbbbbbbbbb",
-      "urlFoto": "",
-      "dtLancamento": "2021-02-08T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 16
-    },
-    {
-      "titulo": "ccccccccccc",
-      "urlFoto": null,
-      "dtLancamento": "2021-02-08T03:00:00.000Z",
-      "descricao": null,
-      "nota": 0.4,
-      "urlIMDb": null,
-      "genero": "Ficção Científica",
-      "id": 17
-    },
-    {
-      "titulo": "ggggggggggg",
-      "urlFoto": "",
-      "dtLancamento": "2021-02-08T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção Científica",
-      "id": 18
     }
   ]
 }

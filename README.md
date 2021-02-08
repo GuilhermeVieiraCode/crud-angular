@@ -2,7 +2,7 @@
 
 Esse curso foi feito para a plataforma [Digital Innovation One](https://digitalinnovation.one/)
 
-O curso consiste em um sistema de filmes, com a possibilidade de cadastros, edições, listagem e visualização dos cursos de outros usuários.
+O curso consiste em um sistema de filmes, com a possibilidade de cadastros, edições, listagem e visualização.
 
 ## Instalação
 
@@ -11,7 +11,7 @@ O curso consiste em um sistema de filmes, com a possibilidade de cadastros, edi�
 
 ## Ambiente Local
 
-Execute `ng serve` para que o projeto suba localmente. Acesse a url `http://localhost:4200/`. O projeto já está com reload automático conforme as alterações que você realizar no código
+Execute `ng serve` para que o projeto suba localmente. Acesse a url `http://localhost:4200/`. O projeto já está com reload automático conforme as alterações que você realizar no código.
 
 ## Simulando o Back-end
 
