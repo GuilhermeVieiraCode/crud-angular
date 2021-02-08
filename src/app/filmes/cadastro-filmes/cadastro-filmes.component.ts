@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material';
 import { ValidarCamposService } from 'src/app/shared/components/campos/validar-campos.service';
 import { FilmesService } from 'src/app/core/filmes.service';
 import { Filme } from 'src/app/shared/models/filme';
-import { MatDialog } from '@angular/material';
 import { AlertaComponent } from 'src/app/shared/components/alerta/alerta.component';
+import { Alerta } from 'src/app/shared/models/alerta';
 
 @Component({
   selector: 'dio-cadastro-filmes',
@@ -18,6 +20,7 @@ export class CadastroFilmesComponent implements OnInit {
 
   constructor(  public validacao: ValidarCamposService,
                 public dialog: MatDialog,
+                public router: Router,
                 private fb: FormBuilder,
                 private filmesService: FilmesService) { }
 
@@ -47,7 +50,6 @@ export class CadastroFilmesComponent implements OnInit {
         //Campos do cadatro serão atribuídos a constante filme
         const filme = this.cadastro.getRawValue() as Filme;
         this.salvar(filme);
-        this.reiniciarForm();
     }
 
     reiniciarForm(): void{
@@ -56,11 +58,33 @@ export class CadastroFilmesComponent implements OnInit {
 
     private salvar(filme: Filme): void{
         this.filmesService.salvar(filme).subscribe(() => {
-            const dialogRef = this.dialog.open(AlertaComponent);
-            
+            const config = {
+                data: {
+                    btnSucesso: "Listagem de filmes",
+                    btnCancelar: "Cadastrar novo filme",
+                    corBtnCancelar: "primary",
+                    possuirBtnFechar: true,
+                } as Alerta
+            };
+            const dialogRef = this.dialog.open(AlertaComponent, config);
+            dialogRef.afterClosed().subscribe((option : boolean) => {
+                if(option){
+                    this.router.navigateByUrl("filmes");
+                }else{
+                    this.reiniciarForm();
+                }
+            })
         },
         () => {
-            alert("Erro ao salvar!")
+            const config = {
+                data: {
+                    titulo: "Erro ao salvar o registro",
+                    descricao: "Tente novamente mais tarde",
+                    corBtnSucesso: "warn",
+                    btnSucesso: "Fechar",
+                } as Alerta
+        };
+        this.dialog.open(AlertaComponent, config);
         })
     }
 }
